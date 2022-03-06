@@ -1,16 +1,16 @@
 const config : any = {}
 
-config.siteTitle = "Site Title",
-config.credits = "created by fawaz"
+config.siteTitle = "Burrow",
+config.credits = "Designed and developed by Fawaz Sullia"
 
 config.meta = {
 
    
-homeTitle : "Title for home page here",
+homeTitle : "Welcome to Fawaz's website",
 homeDescription : "Description for Home page",
-blogPageTitle : "Blog Page Title",
-blogPageDescription : "Blog Page description",
-defaultBlogPostMetaDescription : "Tgis is default meta description for blog posts"
+blogPageTitle : "Blog, where I write",
+blogPageDescription : "Browse through my articles. All opinions are mine and subjected to criticism",
+defaultBlogPostMetaDescription : "This is default meta description for blog posts"
 
 }
 
