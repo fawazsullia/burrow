@@ -11,6 +11,7 @@ const Header = ({children} : any) => {
             <ul>
                 <li><Link href={"/"}>Home</Link></li>
                 <li><Link href={"/blog"}>Blog</Link></li>
+                <li><Link href={"/chatroom"}>Chat</Link></li>
             </ul>
         </nav>
         </header>

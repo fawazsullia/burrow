@@ -2,6 +2,7 @@ const config : any = {}
 
 config.siteTitle = "Burrow",
 config.credits = "Designed and developed by Fawaz Sullia"
+config.chatApi = "https://chat-api-burrow.herokuapp.com"
 
 config.meta = {
 
