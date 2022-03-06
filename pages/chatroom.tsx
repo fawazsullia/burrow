@@ -39,7 +39,7 @@ setmessages(mess)
 
 return <div>
     <div>{messages.map((m : any)=> {
-        return <p>{m}</p>
+        return <p key={m+new Date()}>{m}</p>
     })}</div>
     <form>
         <input type="text" value={name} onChange={(e)=> setname(e.target.value)}></input>
