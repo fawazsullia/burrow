@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap");
+
+.main {
+  min-height: 80vh;
+  padding-top: 80px;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+  font-style: italic;
+  font-weight: 450;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.blogListDiv {
+  width: 60%;
+  margin: 70px auto auto auto;
+  padding: 20px;
+}
+
+.blogPost {
+  border-bottom: 1px solid grey;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+.blogPost p {
+  font-size: 0.9rem;
+}
+
+.postTitle {
+  font-family: "Chakra Petch", sans-serif;
+  color: rgb(16, 16, 136);
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.postTitle:visited {
+  color: brown;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.excerpt {
+  margin: 0;
+}

@@ -1,0 +1,22 @@
+-> Pages -- Home and blog in root. Also blog/[blog]
+-> blog has list of blog posts with title,published date, tags
+-> each blog post has : title, tags, author, date published
+
+for blog page, I need the title, pubished date, tags and slug
+I need to get this all during ssg
+
+In individual blog post, I can use getpaths and get stat props
+
+blog post page:
+
+container
+main
+blog head section
+bread crumbs
+article
+common message section -  buy me coffee maybe
+/main
+/container
+
+
+needs meta decription in contentful and dynamically add it in each blog page

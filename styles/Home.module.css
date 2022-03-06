@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.main p {
+  font-size: 1.3rem;
+  color: indianred;
+  font-weight: 500;
+}
