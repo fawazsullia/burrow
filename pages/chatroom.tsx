@@ -43,11 +43,11 @@ setmessages(mess)
   }
 
 
-  window.addEventListener("keydown", (e : any)=> {
-      if(e.code === "Enter"){
-          sendMessage()
-      }
-  })
+//   window.addEventListener("keydown", (e : any)=> {
+//       if(e.code === "Enter"){
+//           sendMessage()
+//       }
+//   })
 
 return <div className={styles.container} >
     <h2>Chat Room</h2>
