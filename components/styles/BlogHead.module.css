@@ -23,3 +23,23 @@
   justify-content: flex-start;
   gap: 10px;
 }
+
+@media only screen and (max-width: 480px){
+
+  
+  .container h1{
+    font-size: 1.8rem;
+  }
+  
+  
+  }
+
+  @media only screen and (max-width: 360px){
+
+  
+    .container h1{
+      font-size: 1.5rem;
+    }
+    
+    
+    }

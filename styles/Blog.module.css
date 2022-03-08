@@ -50,3 +50,29 @@
 .excerpt {
   margin: 0;
 }
+
+@media only screen and (max-width: 480px){
+
+.intro {
+  width: 80%;
+}
+
+.blogListDiv {
+  width: 80%;
+}
+
+
+}
+
+@media only screen and (max-width: 360px){
+
+  .intro {
+    width: 90%;
+  }
+  
+  .blogListDiv {
+    width: 90%;
+  }
+  
+  
+  }
