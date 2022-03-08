@@ -1,6 +1,7 @@
-import { useEffect, useState, useLayoutEffect} from 'react'
+import { useEffect, useState, useRef, Ref, MutableRefObject} from 'react'
 import io from 'socket.io-client'
 import config from '../config'
+import styles from '../styles/Chatroom.module.css'
 let socket : any
 
 
@@ -22,28 +23,43 @@ const [message, setmessage] = useState("")
 
 useEffect(()=>{
 socket.on("chat", (msg : any)=> {
+    msg = msg.replace(";", "")
     let mess = [...messages, msg]
 setmessages(mess)
 })}, [messages])
 
   function sendMessage(){
-      let msg = name + " " + ":" + " " + message + ";"
+      if(name !== "" && message !== ""){
+        let msg = name + " " + ":" + " " + message + ";"
      
         socket.emit("chat", msg)
-        setmessage("")
-        setname("")
-      
+        setmessage("")    
+      }
+      else {
+          alert("A name and a message is required")
+      }
+            
       
   }
 
 
-return <div>
-    <div>{messages.map((m : any)=> {
-        return <p key={m+new Date()}>{m}</p>
+  window.addEventListener("keydown", (e : any)=> {
+      if(e.code === "Enter"){
+          sendMessage()
+      }
+  })
+
+return <div className={styles.container} >
+    <h2>Chat Room</h2>
+    <p>This is an anonymous chatroom I created for fun. By mindful of the language</p>
+    <div className={styles.messageContainer}>{messages.map((m : any)=> {
+        return <p key={m+new Date()} className={styles.message}>{m}</p>
     })}</div>
-    <form>
-        <input type="text" value={name} onChange={(e)=> setname(e.target.value)}></input>
-        <input type="text" value={message} onChange={(e)=> setmessage(e.target.value)}></input>
+    <form className={styles.form}>
+        <label>Name : </label>
+        <input type="text" value={name} onChange={(e)=> setname(e.target.value)}></input><br /><br />
+        <label>Message : </label>
+        <input type="text" value={message} onChange={(e)=> setmessage(e.target.value)}></input><br /><br />
         <button type='button' onClick={sendMessage}>Send</button>
     </form>
 </div>

@@ -1,0 +1,21 @@
+.container{
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.messageContainer{
+   height: 50vh;
+   overflow-y: auto;
+   border-bottom: solid 1px black;
+   border-top: solid 1px black;
+   margin-bottom: 20px;
+}
+
+.container button{
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+}
